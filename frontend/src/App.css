@@ -1,0 +1,12 @@
+#root {
+    width: 360px;
+    height: 480px;
+    overflow-y: auto;
+}
+.footer {
+    position: fixed;
+    top: 400px;
+    left:50px;
+    width: 100%;
+}
+  
