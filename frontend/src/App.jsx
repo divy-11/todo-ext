@@ -16,7 +16,7 @@ function App() {
   }, [ref])
 
   async function fetch() {
-    const res = await axios.get("http://localhost:1717/");
+    const res = await axios.get("https://todo-ext.onrender.com/");
     setTodos(res.data);
     // console.log(res.data);
 
@@ -27,7 +27,7 @@ function App() {
     await axios({
       method: 'post',
       maxBodyLength: Infinity,
-      url: 'http://localhost:1717/',
+      url: 'https://todo-ext.onrender.com/',
       headers: {
         'Content-Type': 'application/json'
       },
@@ -41,7 +41,7 @@ function App() {
   async function editTodo(e) {
     console.log(editVal);
     e.preventDefault();
-    await axios.put("http://localhost:1717/", {
+    await axios.put("https://todo-ext.onrender.com/", {
       id: editVal._id,
       title: editVal.title,
       description: editVal.description,
@@ -55,14 +55,14 @@ function App() {
 
 
   async function del(todo) {
-    await axios.delete("http://localhost:1717/", {
+    await axios.delete("https://todo-ext.onrender.com/", {
       data: { id: todo._id }
     })
     setRef(!ref);
   }
 
   async function compl(todo) {
-    await axios.put("http://localhost:1717/", {
+    await axios.put("https://todo-ext.onrender.com/", {
       id: todo._id,
       title: todo.title,
       description: todo.description,
