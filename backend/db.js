@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 mongoose.connect("mongodb+srv://Admin:jZEOL6CqWnapaRou@cluster0.g8cch4b.mongodb.net/Todo")
     .then(() => { console.log("MongoDB connected !"); })
-    .catch((e) => { console.log(err); })
+    .catch((err) => { console.log(err); })
 const todoSchema = new mongoose.Schema({
     title: {
         type: String,

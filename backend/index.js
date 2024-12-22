@@ -13,7 +13,7 @@ app.get("/", async (req, res) => {
 
 app.post("/", async (req, res) => {
     const inp = req.body;
-    console.log(inp);
+    // console.log(inp);
     await Todo.create({
         title: inp.title,
         description: inp.description,
