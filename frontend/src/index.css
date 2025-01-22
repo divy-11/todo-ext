@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#root {
+    width: 360px;
+    height: 480px;
+    overflow-y: auto;
+}
+
+.footer {
+    position: fixed;
+    top: 400px;
+    left: 50px;
+    width: 100%;
+}
+
+input[type="text"] {
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+    background-color: #f9f9f9;
+    border-color: #3b82f6;
+    /* Blue accent */
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.text-slate-500 {
+    color: #6b7280;
+    /* Subtle gray */
+}
+
+.text-slate-700 {
+    color: #374151;
+    /* Darker gray */
+}
+
+/* Buttons */
+button {
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}

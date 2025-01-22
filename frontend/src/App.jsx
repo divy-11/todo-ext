@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './App.css'
+import './index.css'
 import axios from "axios";
 import { Watch } from './components/Watch';
 import { DateTell } from './components/DateTell';
